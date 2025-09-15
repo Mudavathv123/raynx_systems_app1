@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Response </title>
+    <link rel="stylesheet" href="../css/response.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Montserrat:wght@500;600;700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <main class="thankyou-page">
+        <header class="brand-row">
+            <div class="brand">
+                <h2>Raynx</h2>&nbsp;
+                <h2>Systems</h2>
+            </div>
+            <div class="logo">
+                <img src="../Pictures/bluelogo.png" alt="Raynx Systems" height="64" width="64">
+            </div>
+        </header>
+
+        <section class="thankyou-card">
+            <div class="icon-circle">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M20 6L9 17l-5-5"/>
+                </svg>
+            </div>
+            <h1 class="title">Thank you!</h1>
+            <p class="subtitle">Your response has been recorded successfully.</p>
+            <p class="meta">We’ll get back to you shortly.</p>
+            <a class="primary-btn" href="./index.html#Home">Back to Home</a>
+        </section>
+
+        <p class="auto-note">You will be redirected in <span id="count">5</span>s…</p>
+    </main>
+
+    <script>
+      (function(){
+        var c=5, el=document.getElementById('count');
+        var iv=setInterval(function(){
+          c--; if(el) el.textContent = c;
+          if(c<=0){ clearInterval(iv); window.location.href = './index.html#Home'; }
+        },1000);
+      })();
+    </script>
+</body>
+
+</html>
