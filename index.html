@@ -8,6 +8,9 @@
   <title>Raynx Systems</title>
   <link rel="stylesheet" href="./css/styles.css" />
   <link rel="stylesheet" href="./css/responsiveness.css" />
+  <link rel="stylesheet" href="./css/founder_info.css" />
+  <link rel="stylesheet" href="./css/team_animations.css" />
+  <link rel="stylesheet" href="./css/footer_professional.css" />
   <link rel="stylesheet" href="./css/mobileview_styles.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
@@ -28,6 +31,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Della+Respira&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
   <link rel="icon" type="image/png" href="./Pictures/bluelogo.png">
 </head>
 
@@ -35,10 +40,15 @@
   <!-- HEADER / HERO -->
   <div class="hero-container" id="home">
     <header class="main-header">
+
       <div class="logo">
-        <span class="logo-text">Raynx Systems</span>
-        <img src="./Pictures/bluelogo.png" alt="Raynx Systems Logo" class="logo-image">
+        <a href="#home" class="skip-link">
+          <span class="logo-text">Raynx Systems</span>
+          <img src="./Pictures/bluelogo.png" alt="Raynx Systems Logo" class="logo-image">
+        </a>
       </div>
+
+
       <nav class="navbar">
         <div class="menu-toggle" id="menu-toggle">&#9776;</div>
         <ul class="nav-links" id="nav-links">
@@ -288,7 +298,86 @@
     </div>
   </main>
 
-  <!-- TEAM -->
+  <!-- TEAM SECTION -->
+  <section class="team-section" id="team">
+    <h2>Our Leadership Team</h2>
+    <div class="founder-info">
+      <div class="card">
+        <div class="card-image">
+          <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=600&q=80"
+            alt="CEO and Founder">
+        </div>
+        <div class="card-info">
+          <h2>Rajesh Kumar</h2>
+          <p>CEO & Founder</p>
+          <p>Visionary leader with 15+ years of experience in software development and business strategy. Passionate
+            about building innovative solutions that drive digital transformation.</p>
+        </div>
+        <div class="card-social">
+          <a href="#" class="social-icon" aria-label="LinkedIn">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          <a href="#" class="social-icon" aria-label="Twitter">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="#" class="social-icon" aria-label="Email">
+            <i class="fas fa-envelope"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-image">
+          <img
+            src="https://imgs.search.brave.com/vXIe7LIUS2K2kH4x-gb4B1F7Pwxz0ClHuM7P-qMARkk/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9hd3Nl/eGVjdXRpdmUuY29t/L3dwLWNvbnRlbnQv/dXBsb2Fkcy9zaXRl/cy8zLzIwMjEvMDgv/Y2VvLXBvcnRyYWl0/LndlYnA"
+            alt="CTO and Co-Founder">
+        </div>
+        <div class="card-info">
+          <h2>Priya Sharma</h2>
+          <p>CTO & Co-Founder</p>
+          <p>Technical architect with expertise in full-stack development and cloud technologies. Leads our engineering
+            team in creating scalable and robust software solutions.</p>
+        </div>
+        <div class="card-social">
+          <a href="#" class="social-icon" aria-label="LinkedIn">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          <a href="#" class="social-icon" aria-label="GitHub">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="#" class="social-icon" aria-label="Email">
+            <i class="fas fa-envelope"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-image">
+          <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=600&q=80"
+            alt="Head of Operations">
+        </div>
+        <div class="card-info">
+          <h2>Arjun Patel</h2>
+          <p>Head of Operations</p>
+          <p>Operations specialist focused on streamlining processes and ensuring project delivery excellence. Expert in
+            agile methodologies and team management.</p>
+        </div>
+        <div class="card-social">
+          <a href="#" class="social-icon" aria-label="LinkedIn">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          <a href="#" class="social-icon" aria-label="Twitter">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="#" class="social-icon" aria-label="Email">
+            <i class="fas fa-envelope"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TEAM INTRODUCTION -->
   <div id="Ourteam">
     <div id="mid">
       <div class="heading" style="font-family: 'Anton', serif; ">
@@ -296,7 +385,7 @@
       </div>
 
       <div class="cont">
-        <img src="./Pictures/outeamnew.jpeg" alt="">
+        <img src="./Pictures/outeamnew.jpeg" alt="Raynx Systems Team">
         <p class="matter">
           The heart of Raynx Systems is a passionate team of
           problem-solvers, thinkers, and builders who believe
@@ -310,16 +399,8 @@
       </div>
     </div>
   </div>
-
-  <!-- GALLERY -->
   <section id="gallery">
-    <h2>Key People</h2>
-    <div class="gallery">
-      <img src="./keypeople/image1.jpeg" class="activeg" alt="Image 1">
-      <img src="./gallery/image4.jpg" alt="">
-    </div>
-
-    <h2 class="sec">Gallery</h2>
+    <h2 class="sec">Team Members</h2>
     <section class="inner-box" id="scrollBox">
       <img src="./gallery/image1.jpg" alt="">
       <img src="./gallery/image10.jpeg" alt="">
@@ -334,7 +415,7 @@
   </section>
 
   <!-- CONTACT -->
-  <div id="contact">
+  <!-- <div id="contact">
     <div class="lt">
       <div id="part2">
         <div class="contact">
@@ -352,45 +433,46 @@
           <li><i class="fa fa-map-marker" aria-hidden="true">
             </i><Span>Metro Pillar No. 1556,F-310, 3rd Floor ,Sreeman rama Towers,<br>Chaitanyapuri, Hyderabad - 500060
             </Span></li>
-        </div>
+        </div> -->
 
-        <div class="getintouch">
-          <h2>Get in Touch</h2>
+  <div class="getintouch">
+    <h2>Get in Touch</h2>
 
-          <form method="post" name="google-sheet">
-            <div class="dotted-lines">
-              <label for="" style="margin-bottom: 2px;" name="Name">Name:</label>
-              <input type="text" name="Name" required><br>
-            </div>
-            <br>
+    <form method="post" name="google-sheet">
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="Name" required>
+      </div>
 
-            <div class="dotted-lines">
-              <label for="" name="Contact">Contact:</label>
-              <input type="tel" name="Contact" required pattern="[0-9]{10}"><br>
-            </div>
-            <br>
+      <div class="form-group">
+        <label for="contact">Contact</label>
+        <input type="tel" id="contact" name="Contact" required pattern="[0-9]{10}">
+      </div>
 
-            <div class="dotted-lines">
-              <label for="">Email:</label>
-              <input type="email" name="Email" required><br>
-            </div>
-            <br>
-            <label for="Message">Message:</label>
-            <textarea name="Message" id="Message" rows="5" cols="20"></textarea>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="Email" required>
+      </div>
 
-            <button id="submit" type="submit" name="submit">Connect</button>
+      <div class="form-group">
+        <label for="message">Message</label>
+        <textarea name="Message" id="message" rows="5"></textarea>
+      </div>
 
-          </form>
+      <button id="submit" type="submit" name="submit">Connect</button>
+    </form>
 
-          <div id="popup" class="popup">
-            <div class="popup-content">
-              <h3>Your request has been received!</h3>
-              <button onclick="document.getElementById('popup').style.display='none'">OK</button>
-            </div>
-          </div>
-        </div>
+    <!-- Popup -->
+    <div id="popup" class="popup">
+      <div class="popup-content">
+        <h3>Your request has been received!</h3>
+        <button onclick="document.getElementById('popup').style.display='none'">OK</button>
+      </div>
+    </div>
+  </div>
 
-        <div class="end">
+
+  <!-- <div class="end">
           <div class="third">
             <p class="head3" style="font-family: 'Germania One', 'serif';">THANK </p>
             <p class="head4" style="font-family: 'Germania One', 'serif';">YOU</p>
@@ -399,55 +481,85 @@
           <div class="last">
             <span>Raynx <span style=" color:  hsl(199, 100%, 26%);">Systems</span></span>
           </div>
-        </div>
-      </div>
-    </div>
+        </div> -->
+  </div>
+  </div>
   </div>
 
   <footer class="site-footer" id="footer">
     <div class="footer-inner">
+      <!-- Brand Section -->
       <div class="footer-brand">
-        <img src="./Pictures/bluelogo.png" alt="Raynx Systems Logo" class="footer-logo">
-        <span class="footer-title">Raynx Systems</span>
+        <div>
+          <span class="footer-title">Raynx Systems</span>
+          <img src="./Pictures/bluelogo.png" alt="Raynx Systems Logo" class="footer-logo">
+        </div>
+
         <p class="footer-tag">Building Future-Ready Software Solutions</p>
+
+        <!-- Social Media Links -->
+        <div class="social-links">
+          <a href="https://www.linkedin.com/company/raynxsystemspvtltd/" target="_blank" aria-label="LinkedIn">
+            <i class="fa-brands fa-linkedin-in"></i>
+          </a>
+          <a href="https://x.com/Raynxsystems" target="_blank" aria-label="Twitter">
+            <i class="fa-brands fa-twitter"></i>
+          </a>
+          <a href="https://www.instagram.com/raynx.systems" target="_blank" aria-label="Instagram">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a href="mailto:hr@raynxsystems.in" aria-label="Email">
+            <i class="fa-solid fa-envelope"></i>
+          </a>
+        </div>
       </div>
-      <div class="map-container">
-        <!-- Google Maps Embed -->
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3807.890196441513!2d78.52819557493423!3d17.36901588351501!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb99e2cfdb5add%3A0xfe00218a64db6661!2sRaynx%20Systems%20Private%20Limited!5e0!3m2!1sen!2sin!4v1758019176285!5m2!1sen!2sin"
-          width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"></iframe>
-      </div>
-      <div class="footer-links">
+
+      <!-- Quick Links Section -->
+      <div class="footer-links quick-links">
         <h4>Quick Links</h4>
         <ul>
           <li><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
+          <li><a href="#about">About Us</a></li>
           <li><a href="#services">Services</a></li>
+          <li><a href="#team">Our Team</a></li>
           <li><a href="#gallery">Gallery</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </div>
+
+      <!-- Contact Info Section -->
       <div class="footer-contact">
-        <h4>Contact</h4>
-        <ul class="footer-links">
-          <li><a href="#" id="mailLink"><i class="fa fa-envelope" aria-hidden="true"></i>
-              hr@raynxsystems.in</a></li>
-          <li class="call_mobile"> <a href="#" id="callLink">
-              <i class="fa fa-phone" aria-hidden="true"></i> +91 91000 56252</a></li>
-          <li class="call_desktop">
-            <i class="fa fa-phone" aria-hidden="true"></i> +91 91000 56252</a>
+        <h4>Contact Info</h4>
+        <ul>
+          <li>
+            <i class="fa-solid fa-envelope"></i>
+            <a href="mailto:hr@raynxsystems.in" id="mailLink">hr@raynxsystems.in</a>
           </li>
-          <li><a href="https://www.instagram.com/raynx.systems" target="_blank">
-              <i class="fa fa-instagram" aria-hidden="true"></i>
-              raynx.systems</a></li>
-          <li><a href="https://x.com/Raynxsystems" target="_blank">
-              <i class="fa fa-twitter" aria-hidden="true"></i> @Raynxsystems</a></li>
+          <li>
+            <i class="fa-solid fa-phone"></i>
+            <a href="tel:+919100056252" id="callLink">+91 91000 56252</a>
+          </li>
+          <li>
+            <i class="fa-solid fa-location-dot"></i>
+            <span>Metro Pillar No. 1556,<br>F-310, 3rd Floor,<br>Sreeman rama Towers,<br>Chaitanyapuri, Hyderabad -
+              500060</span>
+          </li>
         </ul>
       </div>
+
+      <!-- Map Section -->
+      <div class="map-container">
+        <h4>Our Location</h4>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3807.890196441513!2d78.52819557493423!3d17.36901588351501!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb99e2cfdb5add%3A0xfe00218a64db6661!2sRaynx%20Systems%20Private%20Limited!5e0!3m2!1sen!2sin!4v1758019176285!5m2!1sen!2sin"
+          allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Raynx Systems Location">
+        </iframe>
+      </div>
     </div>
+
+    <!-- Footer Bottom -->
     <div class="footer-bottom">
-      <p>© <span id="year"></span> Raynx Systems. All rights reserved.</p>
+      <p>© <span id="year"></span> Raynx Systems Private Limited. All rights reserved.</p>
     </div>
   </footer>
 

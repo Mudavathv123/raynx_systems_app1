@@ -67,7 +67,13 @@ h6 {
   font-family: var(--font-heading) !important;
 }
 
+#popup {
+  display: none;
+}
+
 /* --- Footer --- */
+
+
 .site-footer {
   background: #0f1720;
   color: #e6eef6;
@@ -202,6 +208,7 @@ h6 {
   cursor: pointer;
 }
 
+
 .footer-links li a {
   text-decoration: none;
   color: #c7d5e5;
@@ -211,9 +218,20 @@ h6 {
   color: #fff;
 }
 
+.map-container iframe {
+  border: 0;
+  border-radius: 12px;
+  filter: invert(90%) hue-rotate(180deg) brightness(90%) contrast(85%);
+}
+
+
 @media screen and (min-width:768px) {
 
   .call_mobile {
+    display: none;
+  }
+
+  .quick-links {
     display: none;
   }
 
@@ -243,7 +261,7 @@ h6 {
     top: 0;
     left: 0;
     z-index: 1000;
-    padding: 15px 30px;
+    padding: 5px 20px;
     animation: fadeInDown 1s ease-out;
   }
 
@@ -256,11 +274,11 @@ h6 {
 
   /* Style for your logo image */
   .logo-image {
-    height: 60px;
+    height: 40px;
     width: auto;
     letter-spacing: 1px;
     color: #0B95DD;
-    margin-left: -40px;
+    margin-left: -20px;
     font-family: 'Poppins', serif;
   }
 
@@ -2366,7 +2384,7 @@ h6 {
     width: 100%;
     padding-top: 120px;
     justify-content: space-around;
-    margin-bottom:60px;
+    margin-bottom: 60px;
   }
 
 
@@ -2455,123 +2473,6 @@ h6 {
 
   .fa {
     padding-left: 60px;
-  }
-
-
-
-  /*get in touch styling*/
-  .getintouch {
-    width: 375px;
-    height: 380px;
-    border-radius: 30px;
-    padding: 20px;
-    background-color: #ddeef7;
-    /* same dark teal as in your screenshot */
-    box-sizing: border-box;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.9);
-
-  }
-
-  .getintouch h2 {
-    color: #100f0f;
-    margin-bottom: 15px;
-  }
-
-  .dotted-lines {
-    border-bottom: 2px dashed black;
-    padding-top: 2px;
-    padding-bottom: 10px;
-
-  }
-
-
-  .getintouch label {
-    color: black;
-    font-weight: bold;
-    display: block;
-    float: left;
-
-
-  }
-
-  .getintouch input {
-    background: transparent;
-    border: none;
-    outline: none;
-    width: 75%;
-    color: #0b1fb9;
-    font-size: 14px;
-
-  }
-
-
-  .getintouch textarea {
-    width: 330px;
-    height: 50px;
-    resize: none;
-    border-radius: 20px;
-    border: 2px solid black;
-    padding: 10px;
-    font-family: cursive;
-    background: transparent;
-    color: black;
-    font-size: 14px;
-    font-weight: 800px;
-    overflow-y: auto;
-  }
-
-
-  .getintouch button {
-    display: block;
-    margin: 20px auto 0;
-    background-color: oklab(83.023% -0.04181 -0.0792);
-    border: none;
-    padding: 8px 25px;
-    border-radius: 25px;
-    font-size: 16px;
-    font-weight: bold;
-    cursor: pointer;
-    margin-top: 5px;
-  }
-
-  .getintouch button:hover {
-    background-color: hsl(209, 60%, 49%);
-  }
-
-
-  /* Popup Styles */
-  .popup {
-    display: none;
-    position: fixed;
-    z-index: 999;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5);
-  }
-
-  .popup-content {
-    background: white;
-    color: black;
-    padding: 20px;
-    border-radius: 10px;
-    width: 300px;
-    margin: 15% auto;
-    text-align: center;
-  }
-
-  .popup-content button {
-    background-color: hsl(200, 83%, 52%);
-    color: white;
-    padding: 8px 15px;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-  }
-
-  .popup-content button:hover {
-    background-color: #248dea;
   }
 
 

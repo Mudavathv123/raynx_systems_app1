@@ -160,3 +160,25 @@ window.addEventListener('load', () => window.scrollTo(0, 0));
 	scrollBox.addEventListener('mouseleave', () => (paused = false));
 	window.addEventListener('load', autoScroll);
 })();
+
+document.querySelector("form[name='google-sheet']").addEventListener("submit", function (e) {
+	e.preventDefault(); // prevent normal form submit
+
+	// Get values
+	const name = document.getElementById("name").value.trim();
+	const contact = document.getElementById("contact").value.trim();
+	const email = document.getElementById("email").value.trim();
+	const message = document.getElementById("message").value.trim();
+
+	// Validation
+	if (!name || !contact || !email) {
+		alert("Please fill in all required fields.");
+		return;
+	}
+
+	// ✅ If valid → show popup
+	document.getElementById("popup").style.display = "flex";
+
+	// Optionally reset form
+	e.target.reset();
+});

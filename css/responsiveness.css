@@ -1807,7 +1807,9 @@
   .arr8:hover {
     background-color: #001ced;
   }
-
+  .call_desktop {
+    display: none;
+  }
 
 
   /* Ourteam Section */
