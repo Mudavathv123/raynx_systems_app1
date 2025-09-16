@@ -153,7 +153,6 @@
     .d1 {
         position: static;
         font-size: 14px;
-        font-weight: 600;
     }
 
     .mission {
@@ -175,13 +174,16 @@
     .d2 {
         position: static;
         font-size: 14px;
-        font-weight: 600;
     }
 
     .values-image img {
         margin-top: 20px;
         width: 100%;
         height: auto;
+    }
+
+    .call_desktop {
+        display: none;
     }
 
 
