@@ -292,7 +292,7 @@
   <div id="Ourteam">
     <div id="mid">
       <div class="heading" style="font-family: 'Anton', serif; ">
-        <p class="team">TEAM AND LEADERSHIP</p>
+        <h3 class="team">TEAM AND LEADERSHIP</h3>
       </div>
 
       <div class="cont">
@@ -423,11 +423,15 @@
       </div>
       <div class="footer-contact">
         <h4>Contact</h4>
-        <ul>
-          <li><i class="fa fa-envelope" aria-hidden="true"></i> hr@raynxsystems.in</li>
+        <ul class="footer-links">
+          <li><a href="#" id="mailLink"><i class="fa fa-envelope" aria-hidden="true"></i>
+              hr@raynxsystems.in</a></li>
           <li><i class="fa fa-phone" aria-hidden="true"></i> +91 91000 56252</li>
-          <li><i class="fa fa-instagram" aria-hidden="true"></i> raynx.systems</li>
-          <li><i class="fa fa-twitter" aria-hidden="true"></i> @Raynxsystems</li>
+          <li><a href="https://www.instagram.com/raynx.systems" target="_blank">
+              <i class="fa fa-instagram" aria-hidden="true"></i>
+              raynx.systems</a></li>
+          <li><a href="https://x.com/Raynxsystems" target="_blank">
+              <i class="fa fa-twitter" aria-hidden="true"></i> @Raynxsystems</a></li>
         </ul>
       </div>
     </div>
@@ -437,14 +441,19 @@
   </footer>
 
   <script>
-    (function(){
+    (function () {
       var y = document.getElementById('year');
       if (y) { y.textContent = new Date().getFullYear(); }
     })();
   </script>
   <script src="./js/main.js"></script>
+
+  <script>
+    document.getElementById("mailLink").addEventListener("click", function (event) {
+      event.preventDefault();
+      window.location.href = "mailto:hr@raynxsystems.in?subject=Job Application&body=Hello, I am interested in applying.";
+    });
+  </script>
 </body>
 
 </html>
-
-
