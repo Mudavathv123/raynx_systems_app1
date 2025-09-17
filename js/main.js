@@ -1,4 +1,4 @@
-// Mobile menu toggle
+ 
 const toggle = document.getElementById('menu-toggle');
 const navLinks = document.getElementById('nav-links');
 if (toggle && navLinks) {
@@ -7,7 +7,7 @@ if (toggle && navLinks) {
 	});
 }
 
-// About slider (first section) logic
+ 
 (function initAboutSlider() {
 	const aboutWrapper = document.querySelector('#aboutSlides .slides');
 	const aboutSlides = document.querySelectorAll('#aboutSlides .slides > div');
@@ -37,7 +37,7 @@ if (toggle && navLinks) {
 	document.addEventListener('DOMContentLoaded', updateAboutSlider);
 })();
 
-// Generic slides changer used in About section arrows
+ 
 window.changeSlide = function (direction) {
 	const slides = document.querySelectorAll('.slides > div');
 	if (slides.length === 0) return;
@@ -51,7 +51,7 @@ window.changeSlide = function (direction) {
 	if (slidesContainer) slidesContainer.style.transform = `translateX(-${window.currentSlide * 100}%)`;
 };
 
-// Key products/services slider
+ 
 (function initKeySlider() {
 	const slidesWrapper = document.querySelector('.slides-wrapper');
 	const slide = document.querySelectorAll('.slide');
@@ -79,7 +79,7 @@ window.changeSlide = function (direction) {
 	document.addEventListener('DOMContentLoaded', updateSlider);
 })();
 
-// Secondary slider setup (if present)
+ 
 window.changeSlide1 = function (direction) {
 	const slides1 = document.querySelectorAll('.slidess > div');
 	if (slides1.length === 0) return;
@@ -93,7 +93,7 @@ window.changeSlide1 = function (direction) {
 	if (container) container.style.transform = `translateX(-${window.currentSlide1 * 100}%)`;
 };
 
-// Contact form submission (Google Apps Script)
+ 
 (function initContactForm() {
 	const form = document.forms ? document.forms['google-sheet'] : null;
 	const scriptURL = 'https://script.google.com/macros/s/AKfycbxV09pG7kPHd9fB7igXNd-kIo-xziP27FfuqwNiq484tCzozMnyt6nJlxVU1ciKB9UF/exec';
@@ -109,13 +109,13 @@ window.changeSlide1 = function (direction) {
 	});
 })();
 
-// Disable scroll restoration and scroll to top on load
+ 
 if ('scrollRestoration' in history) {
 	history.scrollRestoration = 'manual';
 }
 window.addEventListener('load', () => window.scrollTo(0, 0));
 
-// Small image slider in gallery section (key people)
+ 
 (function initSimpleImageCycler() {
 	const images = document.querySelectorAll('.gallery img');
 	if (images.length === 0) return;
@@ -128,7 +128,7 @@ window.addEventListener('load', () => window.scrollTo(0, 0));
 	setInterval(changeImage, 4000);
 })();
 
-// Auto-scroll for horizontal gallery
+ 
 (function initAutoScroll() {
 	const scrollBox = document.getElementById('scrollBox');
 	if (!scrollBox) return;

@@ -7,10 +7,7 @@
         overflow-x: hidden;
     }
 
-    /* 
-*{
-    outline: 1px solid red;
-} */
+    
 
     /* --- HERO CONTAINER & HEADER --- */
     .hero-container {
@@ -113,10 +110,7 @@
         width: auto;
     }
 
-    /* .slide1{
-    width: 100%;
-    height:fit-content;
-} */
+    
     .values-section {
         padding: 20px;
 
@@ -298,10 +292,7 @@
     }
 
 
-    /* .nav-arrow{
-    position: absolute;
-    top:0px;
-} */
+    
 
 
     /* TEAM AND LEADERSHIP */
