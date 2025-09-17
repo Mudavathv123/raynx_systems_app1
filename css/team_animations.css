@@ -1,3 +1,50 @@
+#company-gallery {
+  background: rgb(34, 55, 78);
+  padding: 60px 20px;
+  text-align: center;
+  overflow: hidden;
+}
+
+#company-gallery .sec {
+  color: #f5f5f5;
+  font-size: 2rem;
+  margin-bottom: 30px;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Container for scrolling */
+.scroll-gallery {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.scroll-track {
+  display: flex;
+  gap: 20px;
+  animation: scroll-left 30s linear infinite;
+}
+
+.scroll-gallery img {
+  width: 350px;   /* Adjust for wide office/team photos */
+  height: 220px;
+  object-fit: cover;
+  border-radius: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.scroll-gallery img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(255, 255, 255, 0.2);
+}
+
+/* Keyframes for infinite scroll */
+@keyframes scroll-left {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+
 
 .getintouch {
   max-width: 600px;

@@ -224,6 +224,16 @@ h6 {
   filter: invert(90%) hue-rotate(180deg) brightness(90%) contrast(85%);
 }
 
+.skip-link {
+  width: 100%;
+  display: flex;
+  gap: 22px;
+  align-items: space-around;
+}
+
+.skip-link span {
+  margin-top: 5px;
+}
 
 @media screen and (min-width:768px) {
 
