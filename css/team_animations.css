@@ -297,14 +297,14 @@ button#submit:hover {
     max-height: 65%;
     overflow-y: auto;
     box-shadow: 0 -10px 30px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
 }
 
 .card-info h2 {
-    font-size: 1.6rem;
+    font-size: 24px;    
     margin-bottom: 12px;
-    font-weight: 700;
     color: #ffffff;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'sans-serif';
     letter-spacing: 0.5px;
 }
 
@@ -545,7 +545,7 @@ button#submit:hover {
     }
     
     .card {
-        height: 380px;
+        /* height: 80px; */
     }
     
     .card-info {
